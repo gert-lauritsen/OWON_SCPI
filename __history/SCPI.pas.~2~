@@ -1,0 +1,26 @@
+unit SCPI;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, VaClasses, VaComm;
+
+type
+  TDataModule1 = class(TDataModule)
+    Comm: TVaComm;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

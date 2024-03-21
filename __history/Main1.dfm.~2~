@@ -1,0 +1,39 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 371
+  ClientWidth = 753
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DeBugTxt: TMemo
+    Left = 568
+    Top = 0
+    Width = 185
+    Height = 371
+    Align = alRight
+    Lines.Strings = (
+      'DeBugTxt')
+    TabOrder = 0
+    ExplicitLeft = 296
+    ExplicitTop = 160
+    ExplicitHeight = 89
+  end
+  object BTest: TButton
+    Left = 392
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = 'BTest'
+    TabOrder = 1
+    OnClick = BTestClick
+  end
+end

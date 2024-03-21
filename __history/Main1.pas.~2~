@@ -1,0 +1,40 @@
+unit Main1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    DeBugTxt: TMemo;
+    BTest: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure BTestClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses SCPI;
+
+procedure TForm1.BTestClick(Sender: TObject);
+begin
+ debugtxt.Lines.Add( SerialScpi.query('*IDN?'));
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+ if SerialScpi.open_resource(3) debugtxt.Line.Add('Connected');
+end;
+
+end.

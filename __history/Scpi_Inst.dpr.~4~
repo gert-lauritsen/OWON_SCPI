@@ -1,0 +1,18 @@
+program Scpi_Inst;
+
+uses
+  Vcl.Forms,
+  Main1 in 'Main1.pas' {Form1},
+  SCPI in 'SCPI.pas' {SerialScpi: TDataModule},
+  confFile in 'confFile.pas' {IniFile: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TIniFile, IniFile);
+  //Application.CreateForm(TSerialScpi, SerialScpi);
+  Application.Run;
+end.

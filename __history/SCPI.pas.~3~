@@ -1,0 +1,67 @@
+unit SCPI;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, VaClasses, VaComm;
+
+type
+  TSerialScpi = class(TDataModule)
+    Comm: TVaComm;
+  private
+    Function PortBaud(Baudrate: integer): TVaBaudrate;
+  public
+    procedure open_resource(comport: integer; Baudrate: integer);
+    procedure write(S:AnsiString);
+    function query(cmd: AnsiString): string;
+  end;
+
+var
+  SerialScpi: TSerialScpi;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+procedure TSerialScpi.open_resource(comport, Baudrate: integer);
+begin
+   try
+    Comm.Close;
+    Comm.Baudrate:=PortBaud(Baudrate);
+    Comm.PortNum:=comport;
+    Comm.Open;
+   Except
+
+   end;
+end;
+
+function TSerialScpi.PortBaud(Baudrate: integer): TVaBaudrate;
+begin
+ case Baudrate of
+  9600: result:= br9600;
+  14400: result:= br14400;
+  19200: result:= br19200;
+  38400: result:= br38400;
+  56000: result:= br56000;
+  57600: result:= br57600;
+  115200: result:= br115200;
+  128000: result:= br128000;
+  256000: result:= br256000;
+ end;
+end;
+
+function TSerialScpi.query(cmd: AnsiString): string;
+begin
+  write(cmd);
+  //wait for respons...
+end;
+
+procedure TSerialScpi.write(S: AnsiString);
+begin
+  Comm.WriteText(AnsiString);
+end;
+
+end.

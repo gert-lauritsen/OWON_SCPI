@@ -1,0 +1,52 @@
+unit Main1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,SCPI, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    DeBugTxt: TMemo;
+    Panel1: TPanel;
+    PMeas: TPanel;
+    LValue: TLabel;
+    Timer: TTimer;
+    procedure FormCreate(Sender: TObject);
+    procedure BTestClick(Sender: TObject);
+    procedure TimerTimer(Sender: TObject);
+  private
+    { Private declarations }
+    Inst: TSerialScpi;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+uses conffile;
+
+procedure TForm1.BTestClick(Sender: TObject);
+begin
+// debugtxt.Lines.Add(Inst.query(Ecmd.Text));
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+ Inst:= TSerialScpi.create(self);
+ ini.open;
+ Inst.open_resource(ini.ReadInt('OWON','COMPORT',0) );
+end;
+
+procedure TForm1.TimerTimer(Sender: TObject);
+begin
+ LValue.Caption:=Inst.query('MEAS1:SHOW?');
+ debugtxt.Lines.Add( LValue.Caption);
+end;
+
+end.
