@@ -69,9 +69,13 @@ end;
 
 procedure TForm1.TimerTimer(Sender: TObject);
 begin
- LValue.Caption:=Inst.query('MEAS1:SHOW?');
- debugtxt.Lines.Add( LValue.Caption);
- FplotData.AddValue(0,strtofloat(trim(Inst.query('MEAS?'))));
+ try
+   LValue.Caption:=Inst.query('MEAS1:SHOW?');
+   debugtxt.Lines.Add(LValue.Caption);
+   FplotData.AddValue(0,strtofloat(trim(Inst.query('MEAS?'))));
+ except
+
+ end;
 end;
 
 end.

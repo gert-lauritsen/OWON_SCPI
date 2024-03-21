@@ -28,6 +28,15 @@ object FplotData: TFplotData
     ExplicitHeight = 250
     DefaultCanvas = 'TGDIPlusCanvas'
     ColorPaletteIndex = 13
+    object BClear: TButton
+      Left = 0
+      Top = 578
+      Width = 75
+      Height = 25
+      Caption = 'Clear'
+      TabOrder = 0
+      OnClick = BClearClick
+    end
     object Series1: TFastLineSeries
       Legend.Visible = False
       ShowInLegend = False
