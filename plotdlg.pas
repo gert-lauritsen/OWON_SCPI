@@ -12,6 +12,7 @@ type
     Chart: TChart;
     Series1: TFastLineSeries;
     BClear: TButton;
+    Series2: TFastLineSeries;
     procedure FormCreate(Sender: TObject);
     procedure BClearClick(Sender: TObject);
   private
@@ -34,14 +35,14 @@ procedure TFplotData.AddValue(Serie: integer; Value: real);
 var
 i: integer;
 begin
- chart.Series[Serie].AddXY(now,Value);
- for I := 0 to chart.SeriesCount-1 do
+  chart.Series[Serie].AddXY(now,Value);
+  for I := 0 to chart.SeriesCount-1 do
     while chart.Series[i].XValues.Count>7200 do chart.Series[i].Delete(0);
 end;
 
 procedure TFplotData.BClearClick(Sender: TObject);
 begin
-clear;
+  clear;
 end;
 
 procedure TFplotData.Clear;

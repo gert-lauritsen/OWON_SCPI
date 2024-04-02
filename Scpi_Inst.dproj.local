@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.402,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Main1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.286,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.116,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\SCPI.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.105,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Scpi_Inst.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.116,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\SCPI.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.542,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\ConfigFile.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.235,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Functiondlg.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.107,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\plotdlg.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.542,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\ConfigFile.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.636,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.235,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Functiondlg.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.238,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.926,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.107,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\plotdlg.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.116,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\SCPI.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.171,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.547,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.909,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.402,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Main1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.116,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\SCPI.dfm</Transaction>
-    <Transaction>2024-03-21 10:43:36.352,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
-    <Transaction>2024-03-21 10:54:31.547,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.dfm</Transaction>
-    <Transaction>2024-03-21 10:54:31.547,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
-    <Transaction>2024-03-21 17:20:01.238,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
-    <Transaction>2024-03-21 17:23:18.171,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.pas=</Transaction>
-    <Transaction>2024-03-21 17:24:13.542,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\ConfigFile.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
-    <Transaction>2024-03-21 17:24:13.542,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\ConfigFile.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.dfm</Transaction>
-    <Transaction>2024-03-21 17:41:56.926,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
-    <Transaction>2024-03-21 17:45:10.107,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\plotdlg.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.pas</Transaction>
-    <Transaction>2024-03-21 17:45:10.107,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\plotdlg.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Scpi_Inst.dproj=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.352,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.286,=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.547,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Unit1.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\confFile.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.402,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Main1.dfm=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.402,C:\Users\gert\Documents\Embarcadero\Studio\Projects\Askob\SCPI_INST\Main1.pas=C:\Users\gert\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

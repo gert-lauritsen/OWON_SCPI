@@ -46,5 +46,14 @@ object FplotData: TFplotData
       YValues.Name = 'Y'
       YValues.Order = loNone
     end
+    object Series2: TFastLineSeries
+      Legend.Visible = False
+      ShowInLegend = False
+      LinePen.Color = 3513587
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
   end
 end

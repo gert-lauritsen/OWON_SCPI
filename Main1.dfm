@@ -26,8 +26,6 @@ object Form1: TForm1
       'DeBugTxt')
     TabOrder = 0
     Visible = False
-    ExplicitLeft = 504
-    ExplicitHeight = 371
   end
   object Panel1: TPanel
     Left = 0
@@ -38,8 +36,6 @@ object Form1: TForm1
     Color = clNavy
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = -8
-    ExplicitHeight = 278
     object PMeas: TPanel
       Left = 2
       Top = 33
@@ -76,6 +72,10 @@ object Form1: TForm1
     object Plot: TMenuItem
       Caption = 'Plot'
       OnClick = PlotClick
+    end
+    object Func1: TMenuItem
+      Caption = 'Func'
+      OnClick = Func1Click
     end
     object MExit: TMenuItem
       Caption = 'Exit'

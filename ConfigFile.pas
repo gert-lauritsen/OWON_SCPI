@@ -23,19 +23,6 @@ var
 implementation
 
 {$R *.dfm}
-Function TFConfigfile.ReadInt(Section,Val: ansistring; default: integer): integer;
-var StrVar: ansistring;
-begin
- try
-   StrVar:=inifile.ReadString(Section,val,inttostr(default));
-   if pos('//',StrVar)>0 then StrVar:=trim(copy(StrVar,1,pos('///',StrVar)-1)) else StrVar:=trim(StrVar);
-   result:=strtoint(StrVar);
- except
-   result:=default;
- end;
-end;
-
-
 procedure TFConfigfile.open;
 var
   filename: string;
@@ -49,6 +36,18 @@ try
 except
   showmessage('Error reading inifile');
 end;
+end;
+
+Function TFConfigfile.ReadInt(Section,Val: ansistring; default: integer): integer;
+var StrVar: ansistring;
+begin
+ try
+   StrVar:=inifile.ReadString(Section,val,inttostr(default));
+   if pos('//',StrVar)>0 then StrVar:=trim(copy(StrVar,1,pos('///',StrVar)-1)) else StrVar:=trim(StrVar);
+   result:=strtoint(StrVar);
+ except
+   result:=default;
+ end;
 end;
 
 Function TFConfigfile.ReadFloat(Section,Val: ansistring; default: real): real;

@@ -16,13 +16,14 @@ type
     Function PortBaud(Baudrate: integer): TVaBaudrate;
     Function ChangeSymbol(Str: AnsiString): Ansistring;
   public
-    procedure open_resource(comport: integer; Baudrate: integer = 115200);
+    function open_resource(comport: integer; Baudrate: integer = 115200): boolean;
     procedure write(S:AnsiString);
     function query(cmd: AnsiString): ansistring;
   end;
 
 var
   SerialScpi: TSerialScpi;
+  Inst: TSerialScpi;
 
 implementation
 
@@ -79,15 +80,16 @@ begin
  Comm.Close;
 end;
 
-procedure TSerialScpi.open_resource(comport, Baudrate: integer);
+function TSerialScpi.open_resource(comport, Baudrate: integer): boolean;
 begin
+ result:=true;
    try
     Comm.Close;
     Comm.Baudrate:=PortBaud(Baudrate);
     Comm.PortNum:=comport;
     Comm.Open;
    Except
-
+    result:=false;
    end;
 end;
 
