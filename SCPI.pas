@@ -1,4 +1,4 @@
-unit SCPI;
+ï»¿unit SCPI;
 
 interface
 
@@ -14,11 +14,11 @@ type
     InBuffer: AnsiString;
     NewRxLine: boolean;
     Function PortBaud(Baudrate: integer): TVaBaudrate;
-    Function ChangeSymbol(Str: AnsiString): Ansistring;
+    Function ChangeSymbol(Str: AnsiString): String;
   public
     function open_resource(comport: integer; Baudrate: integer = 115200): boolean;
     procedure write(S:AnsiString);
-    function query(cmd: AnsiString): ansistring;
+    function query(cmd: AnsiString): String;
   end;
 
 var
@@ -31,6 +31,7 @@ implementation
  uses windows, forms;
 {$R *.dfm}
 const
+LF =#10;
 CR = #13;
 timeout=1000;
 Ohm = chr($a6)+chr($b8);
@@ -38,25 +39,27 @@ micro = chr($aa)+chr($cc);
 grader = chr($a1)+chr($e6);
 farent = chr($a8)+chr($48);
 
-function TSerialScpi.ChangeSymbol(Str: AnsiString): Ansistring;
+function TSerialScpi.ChangeSymbol(Str: AnsiString): String;
+var Outstr: string;
 begin
+ Outstr:=str;
  if pos(micro,str)>0 then begin
    setlength(str,length(str)-3);
-   str:=str+'µ';
+   Outstr:=str+' Âµ';
  end;
  if pos(grader,str)>0 then begin
    setlength(str,length(str)-3);
-   str:=str+'°C';
+   Outstr:=str+' Â°C';
  end;
  if pos(Ohm,str)>0 then begin
    setlength(str,length(str)-3);
-   str:=str+'';
+   Outstr:=str+' Ohm';
  end;
  if pos(farent,str)>0 then begin
    setlength(str,length(str)-3);
-   str:=str+'°F';
+   Outstr:=str+' Â°F';
  end;
- result:=str;
+ result:=Outstr;
 end;
 
 procedure TSerialScpi.CommRxChar(Sender: TObject; Count: Integer);
@@ -66,8 +69,8 @@ ch: ansichar;
 begin
  for i:=1 to count do begin
   Comm.ReadChar(ch);
-  if ch<>CR then
-  InBuffer:=InBuffer+ch;
+  if (ch<>CR) and (CR<>LF) then
+    InBuffer:=InBuffer+ch;
   if ch=CR then
     NewRxLine:=true;
 
@@ -109,7 +112,7 @@ begin
  end;
 end;
 
-function TSerialScpi.query(cmd: AnsiString): ansistring;
+function TSerialScpi.query(cmd: AnsiString): String;
 var TimeStart: LongWord;
 begin
   write(cmd);

@@ -6,7 +6,8 @@ uses
   SCPI in 'SCPI.pas' {SerialScpi: TDataModule},
   ConfigFile in 'ConfigFile.pas' {FConfigfile},
   plotdlg in 'plotdlg.pas' {FplotData},
-  Functiondlg in 'Functiondlg.pas' {Func};
+  Functiondlg in 'Functiondlg.pas' {Func},
+  Logger in 'Logger.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 
@@ -17,6 +18,7 @@ begin
   Application.CreateForm(TFConfigfile, FConfigfile);
   Application.CreateForm(TFplotData, FplotData);
   Application.CreateForm(TFunc, Func);
+  Application.CreateForm(TDataModule1, DataModule1);
   //Application.CreateForm(TSerialScpi, SerialScpi);
   Application.Run;
 end.

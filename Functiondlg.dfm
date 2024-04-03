@@ -2,8 +2,8 @@ object Func: TFunc
   Left = 0
   Top = 0
   Caption = 'Functions'
-  ClientHeight = 143
-  ClientWidth = 179
+  ClientHeight = 135
+  ClientWidth = 182
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
