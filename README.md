@@ -1,6 +1,4 @@
-Here's an enhanced **README.md** for your [OWON_SCPI](https://github.com/gert-lauritsen/OWON_SCPI) project:
 
----
 
 # OWON_SCPI
 
