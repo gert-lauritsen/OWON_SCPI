@@ -57,12 +57,11 @@ The application uses an INI file (`config.ini`) for configuration. Key parameter
 Ensure the INI file is correctly configured before launching the application to guarantee successful communication with the multimeter.
 
 ## Screenshots
+![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204012.png)
 
-![Main Interface](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Main_Interface.png)
-*Main Interface Displaying Real-Time Data*
+![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204059.png)
 
-![Configuration Menu](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Configuration_Menu.png)
-*Configuration Menu for Setting Parameters*
+![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204133.png)
 
 ## Contributing
 
@@ -80,13 +79,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 *Note: Ensure that your OWON multimeter is properly connected and that the correct drivers are installed on your system to facilitate communication.*
 
-EXE is under win32.
-There is an inifile to set comport.
-If you rigthclick the plot menu will show.
-
-![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204012.png)
-
-![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204059.png)
-
-![](https://github.com/gert-lauritsen/OWON_SCPI/blob/main/Picture/Screenshot%202024-04-02%20204133.png)
 
